@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perkembangan Anak Usia 0-3 Tahun</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        label {
+            margin-left: 10px;
+            display: block;
+        }
+        input[type="checkbox"] {
+            margin-top: 5px;
+        }
+    </style>
+    <script>
+        // Fungsi untuk menyimpan status checkbox
+        function saveState() {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach((checkbox, index) => {
+                localStorage.setItem('checkbox' + index, checkbox.checked);
+            });
+        }
+
+        // Fungsi untuk memuat status checkbox yang tersimpan
+        function loadState() {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach((checkbox, index) => {
+                var checked = localStorage.getItem('checkbox' + index) === 'true';
+                checkbox.checked = checked;
+            });
+        }
+
+        window.onload = loadState;
+    </script>
+</head>
+<body>
+    <h1>Checklist Perkembangan Anak</h1>
+
+    <div class="section">
+        <h2>MORAL & NILAI AGAMA (Usia 0-1 Tahun)</h2>
+        <label><input type="checkbox" onchange="saveState()"> Bereaksi ketika mendengarkan senandung lagu bernuansa keagamaan (mengangguk-angguk, tersenyum, tenang, mencari sumber suara)</label>
+        <label><input type="checkbox" onchange="saveState()"> Bereaksi ketika mendengar doa yang dibacakan</label>
+        <label><input type="checkbox" onchange="saveState()"> Bereaksi ketika mendengarkan cerita yang bernuansa keagamaan</label>
+        <label><input type="checkbox" onchange="saveState()"> Merespon rasa sayang dan cinta kasih melalui belaian, sentuhan dan senyuman</label>
+    </div>
+
+    <div class="section">
+        <h2>SOSIAL, EMOSIONAL DAN KEMANDIRIAN (Usia 0-1 Tahun)</h2>
+        <label><input type="checkbox" onchange="saveState()"> Menatap wajah orang yang mengajak berkomunikasi</label>
+        <label><input type="checkbox" onchange="saveState()"> Merespon dengan senyum terhadap orang yang mengajak berkomunikasi</label>
+        <label><input type="checkbox" onchange="saveState()"> Mulai melakukan komunikasi dengan menggerakan tangan terhadap orang di dekatnya</label>
+        <label><input type="checkbox" onchange="saveState()"> Menunjukkan reaksi yang berbeda terhadap orang yang dikenal dan orang yang tidak dikenal</label>
+    </div>
+
+    <div class="section">
+        <h2>BAHASA (Usia 0-1 Tahun)</h2>
+        <label><input type="checkbox" onchange="saveState()"> Bereaksi terhadap isyarat orang lain secara sederhana (Contoh: kedipan mata, geleng kepala, anggukan)</label>
+        <label><input type="checkbox" onchange="saveState()"> Merespon bila dipanggil namanya</label>
+        <label><input type="checkbox" onchange="saveState()"> Mengucapkan kata (Contoh: papa, mama)</label>
+        <label><input type="checkbox" onchange="saveState()"> Mulai meniru suara-suara</label>
+    </div>
+
+    <div class="section">
+        <h2>KOGNITIF (Usia 0-1 Tahun)</h2>
+        <label><input type="checkbox" onchange="saveState()"> Melihat wajah orang dan benda-benda terdekat</label>
+        <label><input type="checkbox" onchange="saveState()"> Mengamati anggota tubuhnya sendiri (tangan, kaki, jari kaki, jari tangan)</label>
+        <label><input type="checkbox" onchange="saveState()"> Mencari benda yang disembunyikan</label>
+    </div>
+
+    <div class="section">
+        <h2>FISIK/MOTORIK (Usia 0-1 Tahun)</h2>
+        <label><input type="checkbox" onchange="saveState()"> Meraih sebuah benda</label>
+        <label><input type="checkbox" onchange="saveState()"> Melempar benda yang dipegang</label>
+        <label><input type="checkbox" onchange="saveState()"> Memainkan jari-jari tangan dan kaki</label>
+        <label><input type="checkbox" onchange="saveState()"> Mengangkat kepala dan dada bila ditengkurapkan</label>
+    </div>
+
+    <div class="section">
+        <h2>Perkembangan Usia 2-3 Tahun</h2>
+        <h3>MORAL & NILAI AGAMA</h3>
+        <label><input type="checkbox" onchange="saveState()"> Menyebut nama Tuhan</label>
+        <label><input type="checkbox" onchange="saveState()"> Mengikuti bacaan doa/berdoa sebelum dan sesudah melakukan kegiatan</label>
+        <label><input type="checkbox" onchange="saveState()"> Menyanyikan lagu keagamaan</label>
+    </div>
+
+    <div class="section">
+        <h3>SOSIAL, EMOSIONAL DAN KEMANDIRIAN</h3>
+        <label><input type="checkbox" onchange="saveState()"> Mulai menunjukkan senang bermain dengan teman</label>
+        <label><input type="checkbox" onchange="saveState()"> Merespon terhadap beberapa nama teman bermain</label>
+        <label><input type="checkbox" onchange="saveState()"> Senang meniru apa yang dilakukan orang lain</label>
+    </div>
+
+    <div class="section">
+        <h3>BAHASA</h3>
+        <label><input type="checkbox" onchange="saveState()"> Mendengarkan cerita</label>
+        <label><input type="checkbox" onchange="saveState()"> Mengucapkan kalimat dengan 2-3 kata (Contoh: Saya mau makan)</label>
+        <label><input type="checkbox" onchange="saveState()"> Meniru dan mengulangi bunyi dan atau kata</label>
+    </div>
+
+    <div class="section">
+        <h3>KOGNITIF</h3>
+        <label><input type="checkbox" onchange="saveState()"> Menyebutkan benda-benda di sekitar</label>
+        <label><input type="checkbox" onchange="saveState()"> Membedakan ukuran benda (besar-kecil)</label>
+        <label><input type="checkbox" onchange="saveState()"> Mengenal konsep 1-2</label>
+    </div>
+
+    <div class="section">
+        <h3>FISIK/MOTORIK</h3>
+        <label><input type="checkbox" onchange="saveState()"> Meniru gerakan senam sederhana</label>
+        <label><input type="checkbox" onchange="saveState()"> Berjalan dengan kontrol yang baik</label>
+        <label><input type="checkbox" onchange="saveState()"> Melompat turun dari ketinggian 10-20 cm dengan dua kaki</label>
+    </div>
+</body>
+</html>
